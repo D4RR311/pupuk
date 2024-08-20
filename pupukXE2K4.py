@@ -14,4 +14,28 @@ def get_img_as_base64(file):
         data = f.read()
     return base64.b64encode(data).decode()
 
-img = get_img_as_base64("foto/pupuk.jpg")
+img = get_img_as_base64("pupuk.jpg")
+
+<style>
+[data-testid="stAppViewContainer"]{{
+background-image: url("data:image/png;base64,{img}");
+background-size: cover;
+}}
+
+[data-testid="stHeader"] {{
+background-color: rgba(0, 0, 0, 0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 1rem;
+}}
+
+[data-testid="collapsedControl"] {{
+left: 1rem;
+}}
+
+</style>
+"""
+
+st.title("Bagian Absensi")
+st.markdown(bg_web, unsafe_allow_html=True)
