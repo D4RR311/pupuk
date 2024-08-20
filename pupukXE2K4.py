@@ -16,6 +16,7 @@ def get_img_as_base64(file):
 
 img = get_img_as_base64("pupuk.jpg")
 
+bg_web = f"""
 <style>
 [data-testid="stAppViewContainer"]{{
 background-image: url("data:image/png;base64,{img}");
