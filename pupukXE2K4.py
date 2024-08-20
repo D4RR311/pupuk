@@ -38,5 +38,5 @@ left: 1rem;
 </style>
 """
 
-st.title("Bagian Absensi")
+st.title("Web Pupuk Organik Dari Sampah Organik")
 st.markdown(bg_web, unsafe_allow_html=True)
